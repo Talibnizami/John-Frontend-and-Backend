@@ -1,0 +1,33 @@
+input[type="text"]::placeholder {
+                 
+    /* Firefox, Chrome, Opera */
+    text-align: center;
+}
+input[type="email"]::placeholder {
+                 
+    /* Firefox, Chrome, Opera */
+    text-align: center;
+}
+input[type="password"]::placeholder {
+                 
+    /* Firefox, Chrome, Opera */
+    text-align: center;
+}
+.nncc{
+    
+    height: 100vh
+}
+.jkdsb{
+    height: 50rem 
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+}
+.asduiu{
+ background-color: black;
+ color: white;
+ padding: 10px 10px;
+ border-radius: 20px;
+text-align: center;
+}

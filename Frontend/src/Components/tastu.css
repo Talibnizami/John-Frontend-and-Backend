@@ -1,0 +1,246 @@
+.nnmm{
+    /* border: 2px solid black; */
+    margin: auto;
+}
+
+.mashdbiuasj{
+    background-color: #000000; /* Green */
+    border: none;
+  color: white;
+  font-family: myFirstFont;
+    padding: 15px 32px;
+    text-align: center;
+    border: 1px solid white;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.mkhffx{
+    background-color: #E5E5E5;
+    /* border: 1px solid black; */
+    display: flex;
+    max-width: 70%;
+margin: auto;
+margin-top: 20px;
+height: max-content
+}
+
+.asfdsvmnkm{
+    width: 80rem;
+}
+.mllsjdsiahb{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+   margin-top: 40px;
+  font-family: myFirstFont;
+    justify-content: flex-start;
+}
+.mhbjhft{
+    line-height: 30px;
+    font-weight: bolder;
+}
+.askndaskasdkas{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.basdsad{
+ margin-right: 20px;
+ margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 216, 0.2) 0px 7px 29px 0px;
+    /* border: 1px solid black; */
+    max-width: 18rem;
+
+}
+.asdasdasdasdasdas{
+    margin-top: 100px;
+}
+.mndasjdbhasiu{
+    /* margin-top: 30px; */
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+.adashdiasv{
+    
+    /* max-width: 400rem; */
+}
+.adawddwq{
+    margin: 4rem 0px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: flex-start; */
+}
+/* .asasnasbashjxsh{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+justify-content: flex-start
+;
+} */
+.smahdiasd{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.setwidthmnbyh{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bolder;
+    font-size: 1rem;
+    width: 500px;
+/* margin-left: 20px; */
+}
+.nmnsd{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    width: 20rem;
+    margin-right: 2rem;
+    margin-bottom: 20px;
+    /* height: 20rem; */
+}
+.nmflsd{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mkiujn{
+    border: 2px solid black;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.hbbrd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-bottom: 400px ; */
+}
+
+
+
+
+
+.mmmm{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+}
+.setmkol{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.notYouTyp{
+    padding: 130px 0px;
+    font-size: 2rem;
+}
+.ajsnasjaskoj{
+    margin-right: 3px;
+    padding: 30px 0px;
+}
+@media screen and (max-width: 582px) {
+    .ajsnasjaskoj		 {
+        font-size: 1rem;
+    }
+    
+  }
+@media screen and (max-width: 768px) {
+
+
+    .adawddwq{
+        margin: 0%;
+    }
+    .mkhffx{
+        flex-wrap: wrap;
+        width: 100vw;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        /* border-radius: 20px; */
+    }
+
+    .asdasnb{
+        text-align: center;
+        margin: auto;
+        font-size: 2rem;
+    }
+  }
+@media screen and (max-width: 582px) {
+    .native{
+        font-size: 1rem;
+    }
+
+
+.native2{
+    font-size: 1.3rem;
+}
+  }
+@media screen and (max-width: 675px) {
+    .setwidthmnbyh{
+        width: auto;
+        margin: 0%;
+    }
+  }
+
+
+.notyuio{
+    font-weight: 400;
+    font-size: 20px;
+    color: #666666;
+}
+.mkjuff{
+    /* position: relative; */
+    /* right: 300px; */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.mkjuffd{
+    /* position: relative; */
+    /* right: 400px; */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+.setfontg{
+    font-weight: 800;
+     font-size: 1.2rem;
+  font-family: myFirstFont;
+}
+.setParaID{
+    font-weight: 100;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.setImageshadow{
+    box-shadow: rgba(0, 0, 216, 0.2) 0px 7px 29px 0px;
+
+}
+.adsufv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.OuterDivComplete{
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center; */
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:795px)
+{
+    .nmnsd{
+        margin-right:0% ;
+        width: 100vw;
+    }
+    /* .nmnsd{
+width: 100vw;
+    } */
+}
