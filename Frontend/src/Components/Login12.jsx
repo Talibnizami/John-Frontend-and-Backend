@@ -9,7 +9,7 @@ const LogInPage = () => {
 	const navigate = useNavigate();
 	const[email,setEmail] = useState()
 	const[password,setPassword] = useState()
-	let  baseUrl = "https://dull-gold-leopard-sari.cyclic.app/api/v1"
+	let  baseUrl = "https://jade-lonely-marlin.cyclic.app/api/v1"
 	
 	const logindata =  async ()=>{
 		try {
