@@ -5,11 +5,11 @@ export const Sidebar = () => {
     <div>
 
       
-<aside class="w-64" aria-label="Sidebar">
-   <div class="px-3 py-4 overflow-y-auto rounded  dark:bg-white   bg-black ">
-      <a href="https://flowbite.com/" class="flex items-center pl-2.5 mb-5">
+<aside class="w-64  h-full	 " aria-label="Sidebar" >
+   <div       style={{"height" : "100vh"}}  class="px-3   py-4 overflow-y-auto rounded  dark:bg-white   bg-black ">
+      <a href="https://flowbite.com/" class="flex items-center justify-between	 pl-2.5 mb-5">
          <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-7" alt="Flowbite Logo" />
-         <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+         <span class="self-center text-xl font-semibold whitespace-nowrap   text-white ">Ahmed</span>
       </a>
       <ul class="space-y-2">
       <li>
