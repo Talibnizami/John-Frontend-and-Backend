@@ -19,7 +19,7 @@ import AddtoCard from './Components/AddtoCard';
 import SignupForm2 from './Components/SignupForm2';
 import LogInPage from './Components/Signup';
 import Header from './Components/Header/Header';
-
+import { Sidebar } from './Components/Admin Dashbord/Sidebar';
 function App() {
   return (
     <div className="App">
@@ -42,7 +42,7 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path={"/"} element={<Home />} />
+          <Route path={"/"} element={< Sidebar/>} />
           <Route path={"/Login"} element={<Login />} />
           <Route path={"/AddtoCard"} element={<AddtoCard/>} />
           <Route path={"/Signup"} element={<LogInPage />} />
