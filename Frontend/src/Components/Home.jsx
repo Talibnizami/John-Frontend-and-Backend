@@ -111,7 +111,7 @@ const Home = () => {
         <div className='mmqqoop'>
 
           <div className='iiyytt'>
-            <h1 className='fgd mkjbbfss'>Do Well, Live Well &</h1> <br />
+            <h1 className='fgd font-extrabold	mkjbbfss'>Do Well, Live Well &</h1> <br />
             <h1 className='fgd mkjbbfss'>Dress Really Well</h1><br />
             <p className='mkjbbfss awdw'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a tempus augue, id convallis est</p>
             <button className='iutrvh'>Shop Now!</button>
@@ -171,18 +171,102 @@ const Home = () => {
             </div>
 
             <div class="desc text-center">
-              <h2 >Menace Shirt Design</h2>
+              <h2 className='mpos1'  >Menace Shirt Design</h2>
             </div>
           </div>
 
           <div class="member-text text-center">
-            <h4>Menace Shirt Design</h4>
-            <p class="over-line">Retail: $90.00</p>
-            <p>3 For $30 (B1G2)</p>
+            <h4  className='mpos1' >  Menace Shirt Design</h4>
+            <p class="over-line mkop2">Retail: $90.00</p>
+            <p className='nmji1 ' >3 For $30 (B1G2)</p>
           </div>
 
           <div class="member-link text-center">
-            <a href="#">NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <a href="#" className='mjij1 '  >NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div id="">
+          <div class="content-with-image">
+            <div class="image">
+              <img src={shirt} class="carousal-img img-fluid" />
+            </div>
+
+            <div class="desc text-center">
+              <h2 className='mpos1' >Menace Shirt Design</h2>
+            </div>
+          </div>
+
+          <div class="member-text text-center">
+            <h4 className='mpos1' >Menace Shirt Design</h4>
+            <p class="over-line mkop2">Retail: $90.00</p>
+            <p className='nmji1'>3 For $30 (B1G2)</p>
+          </div>
+
+          <div class="member-link text-center">
+            <a href="#" className='mjij1'>NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div id="">
+          <div class="content-with-image">
+            <div class="image">
+              <img src={shirt} class="carousal-img img-fluid" />
+            </div>
+
+            <div class="desc text-center">
+              <h2 className='mpos1' >Menace Shirt Design</h2>
+            </div>
+          </div>
+
+          <div class="member-text text-center">
+            <h4 className='mpos1' >Menace Shirt Design</h4>
+            <p class="over-line mkop2">Retail: $90.00</p>
+            <p className='nmji1' >3 For $30 (B1G2)</p>
+          </div>
+
+          <div class="member-link text-center">
+            <a href="#" className='mjij1'>NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div id="">
+          <div class="content-with-image">
+            <div class="image">
+              <img src={shirt} class="carousal-img img-fluid" />
+            </div>
+
+            <div class="desc text-center">
+              <h2 className='mpos1' >Menace Shirt Design</h2>
+            </div>
+          </div>
+
+          <div class="member-text text-center">
+            <h4  className='mpos1' >Menace Shirt Design</h4>
+            <p class="over-line mkop2">Retail: $90.00</p>
+            <p  className='nmji1'>3 For $30 (B1G2)</p>
+          </div>
+
+          <div class="member-link text-center">
+            <a href="#"  className='mjij1'>NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div id="">
+          <div class="content-with-image">
+            <div class="image">
+              <img src={shirt} class="carousal-img img-fluid" />
+            </div>
+
+            <div class="desc text-center">
+              <h2 className='mpos1' >Menace Shirt Design</h2>
+            </div>
+          </div>
+
+          <div class="member-text text-center">
+            <h4 className='mpos1' >Menace Shirt Design</h4>
+            <p class="over-line mkop2">Retail: $90.00</p>
+            <p className='nmji1'>3 For $30 (B1G2)</p>
+          </div>
+
+          <div class="member-link text-center">
+            <a href="#" className='mjij1'>NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></a>
           </div>
         </div>
         <div id="">
@@ -197,97 +281,13 @@ const Home = () => {
           </div>
 
           <div class="member-text text-center">
-            <h4>Menace Shirt Design</h4>
-            <p class="over-line">Retail: $90.00</p>
-            <p>3 For $30 (B1G2)</p>
+            <h4 className='mpos1' >Menace Shirt Design</h4>
+            <p class="over-line mkop2">Retail: $90.00</p>
+            <p className='nmji1 ' >3 For $30 (B1G2)</p>
           </div>
 
           <div class="member-link text-center">
-            <a href="#">NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-          </div>
-        </div>
-        <div id="">
-          <div class="content-with-image">
-            <div class="image">
-              <img src={shirt} class="carousal-img img-fluid" />
-            </div>
-
-            <div class="desc text-center">
-              <h2 >Menace Shirt Design</h2>
-            </div>
-          </div>
-
-          <div class="member-text text-center">
-            <h4>Menace Shirt Design</h4>
-            <p class="over-line">Retail: $90.00</p>
-            <p>3 For $30 (B1G2)</p>
-          </div>
-
-          <div class="member-link text-center">
-            <a href="#">NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-          </div>
-        </div>
-        <div id="">
-          <div class="content-with-image">
-            <div class="image">
-              <img src={shirt} class="carousal-img img-fluid" />
-            </div>
-
-            <div class="desc text-center">
-              <h2 >Menace Shirt Design</h2>
-            </div>
-          </div>
-
-          <div class="member-text text-center">
-            <h4>Menace Shirt Design</h4>
-            <p class="over-line">Retail: $90.00</p>
-            <p>3 For $30 (B1G2)</p>
-          </div>
-
-          <div class="member-link text-center">
-            <a href="#">NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-          </div>
-        </div>
-        <div id="">
-          <div class="content-with-image">
-            <div class="image">
-              <img src={shirt} class="carousal-img img-fluid" />
-            </div>
-
-            <div class="desc text-center">
-              <h2 >Menace Shirt Design</h2>
-            </div>
-          </div>
-
-          <div class="member-text text-center">
-            <h4>Menace Shirt Design</h4>
-            <p class="over-line">Retail: $90.00</p>
-            <p>3 For $30 (B1G2)</p>
-          </div>
-
-          <div class="member-link text-center">
-            <a href="#">NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-          </div>
-        </div>
-        <div id="">
-          <div class="content-with-image">
-            <div class="image">
-              <img src={shirt} class="carousal-img img-fluid" />
-            </div>
-
-            <div class="desc text-center">
-              <h2 >Menace Shirt Design</h2>
-            </div>
-          </div>
-
-          <div class="member-text text-center">
-            <h4>Menace Shirt Design</h4>
-            <p class="over-line">Retail: $90.00</p>
-            <p>3 For $30 (B1G2)</p>
-          </div>
-
-          <div class="member-link text-center">
-            <a href="#">NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <a href="#" className='mjij1'>NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></a>
           </div>
         </div>
       </Carousel>
@@ -312,14 +312,14 @@ const Home = () => {
 
       <div className='fifth   '>
         <div className='flex flex-col' >
-          <h1 className='bsafdjaus'>About Tatsu Threads</h1>
+          <h1 className='bsafdjaus   '>About Tatsu Threads</h1>
           <div className='nono'>
             <div className='mokli'>
               <img src={short} alt="" />
             </div>
             <div className='fokli'>
               <img className='filterqwe' src={mesurment} alt="" />
-              <p className='headfill2 text-white'>
+              <p className='headfill23 text-white'>
                 lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 sed euismod libero nec arcu vehicula congue. pellentesque lacinia
                 lobortis efficitur. mauris vel ipsum mi. mauris lacus tellus.
@@ -399,7 +399,7 @@ const Home = () => {
       {/* Sixth Part */}
 
       <div className='hjsgaisa33'>
-        <h1 className='headfill'>Trending Now</h1>
+        <h1  style={{'font-family': 'fantasy' , 'font-size': '77px'}} className='headfill'     >Trending Now</h1>
         <div className='jkloun'>
           <p className='headfill2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a tempus augue, id convallis est. Nulla neque sapien, mattis
             at molestie id, auctor faucibus ligula. Pellentesque laoreet luctus erat, at ullamcorper neque feugiat id.</p>
@@ -418,28 +418,28 @@ const Home = () => {
 
         <div className='zxczxczx notcallhonkdfs		flex-col  flex '>
           <img src={girl} alt="" />
-          <h3 className='mt-6  text-xl font-bold'>Menace Shirt Design</h3>
-          <h3 className=' my-2  '>Retail: $90.00</h3>
-          <h3 className='my-2'>3 For $30 (B1G2)</h3>
-          <h3 className=' text-sm	 font-bold' >NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></h3>
+          <h3 className='mt-6  text-xl font-bold nhyjn' style={{'font-family': 'cursive'} }>Menace Shirt Design</h3>
+          <h3 className=' my-2 mkop23'>Retail: $90.00</h3>
+          <h3 className='my-2 nmji1'>3 For $30 (B1G2)</h3>
+          <h3 className=' text-sm	 font-bold mjij12'  >NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></h3>
         </div>
 
 
         <div className='zxczxczx notcallhonkdfs  niyvfgbhgaa	mt-16	flex-col  flex	'>
           <img src={boy} alt="" />
-          <h3 className='mt-6  text-xl font-bold'>Menace Shirt Design</h3>
-          <h3 className=' my-2  '>Retail: $90.00</h3>
-          <h3 className='my-2'>3 For $30 (B1G2)</h3>
-          <h3 className=' text-sm	 font-bold' >NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></h3>
+          <h3 className='mt-6  text-xl font-bold nhyjn' style={{'font-family': 'cursive'} }>Menace Shirt Design</h3>
+          <h3 className=' my-2  mkop23'>Retail: $90.00</h3>
+          <h3 className='my-2 nmji1'>3 For $30 (B1G2)</h3>
+          <h3 className=' text-sm	 font-bold mjij12' >NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></h3>
         </div>
 
 
         <div className='zxczxczx notcallhonkdfs		flex-col  flex'>
           <img src={thirdboy} alt="" />
-          <h3 className='mt-6  text-xl font-bold'>Menace Shirt Design</h3>
-          <h3 className=' my-2  '>Retail: $90.00</h3>
-          <h3 className='my-2'>3 For $30 (B1G2)</h3>
-          <h3 className=' text-sm	 font-bold' >NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></h3>
+          <h3 className='mt-6  text-xl font-bold nhyjn' style={{'font-family': 'cursive'} }>Menace Shirt Design</h3>
+          <h3 className=' my-2 mkop23'>Retail: $90.00</h3>
+          <h3 className='my-2 nmji1'>3 For $30 (B1G2)</h3>
+          <h3 className=' text-sm	 font-bold mjij12' >NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></h3>
 
         </div>
       </div>
@@ -481,14 +481,14 @@ const Home = () => {
 
       {/* Footer */}
       <section>
-        <div id="our-collection"> <h1>Our Collection</h1></div>
+        <div id="our-collection"> <h1 className='njihggyuygvgy' >Our Collection</h1></div>
         <div class="flex flex-wrap justify-center">
           <div class="flex flex-col  asdasdsadsadasd  w-full m-6 overflow-hidden sm:w-52">
             <div class="tatsu-collection">
               <img src={homeTshirt} class="img-fluid" />
             </div>
             <div class="product-name">
-              <h4>Joggers</h4>
+              <h4  className='vhgnsaajdss'  >Joggers</h4>
             </div>
           </div>
 
@@ -500,7 +500,7 @@ const Home = () => {
               <img src={homeHat} class="img-fluid" />
             </div>
             <div class="product-name">
-              <h4>Hats</h4>
+              <h4  className='vhgnsaajdss'  >Hats</h4>
             </div>
 
           </div>
@@ -523,7 +523,7 @@ const Home = () => {
               <img src={homeTshirt} class="img-fluid" />
             </div>
             <div class="product-name">
-              <h4>Joggers</h4>
+              <h4  className='vhgnsaajdss'  >Joggers</h4>
             </div>
           </div>
 
@@ -534,7 +534,7 @@ const Home = () => {
               <img src={homeShorts} class="img-fluid" />
             </div>
             <div class="product-name">
-              <h4>Shorts</h4>
+              <h4  className='vhgnsaajdss'  >Shorts</h4>
             </div>
           </div>
 

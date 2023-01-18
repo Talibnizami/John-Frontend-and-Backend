@@ -7,7 +7,7 @@
     background-color: #000000; /* Green */
     border: none;
   color: white;
-  font-family: myFirstFont;
+   
     padding: 15px 32px;
     text-align: center;
     border: 1px solid white;
@@ -36,7 +36,7 @@ height: max-content
     flex-direction: column;
     /* align-items: flex-start; */
    margin-top: 40px;
-  font-family: myFirstFont;
+   
     justify-content: flex-start;
 }
 .mhbjhft{
@@ -209,7 +209,7 @@ justify-content: flex-start
 .setfontg{
     font-weight: 800;
      font-size: 1.2rem;
-  font-family: myFirstFont;
+   
 }
 .setParaID{
     font-weight: 100;

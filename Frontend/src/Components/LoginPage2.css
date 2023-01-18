@@ -6,7 +6,7 @@
 [ FONT ]*/
 
 /* @font-face {
-    font-family: myFirstFont;
+     
     src: url('../fonts/poppins/Poppins-Regular.ttf'); 
   }
   
@@ -41,7 +41,7 @@
   
   /*---------------------------------------------*/
   a {
-      font-family: myFirstFont;
+       
       /* font-size: 14px; */
       /* line-height: 1.7; */
       /* color: #666666; */
@@ -68,7 +68,7 @@
   }
   
   p {
-      font-family: myFirstFont;
+       
       font-size: 14px;
       line-height: 1.7;
       color: #666666;
@@ -135,14 +135,14 @@
   /*//////////////////////////////////////////////////////////////////
   [ Utility ]*/
   .txt1 {
-    font-family: myFirstFont;
+     
     font-size: 13px;
     line-height: 1.5;
     color: #999999;
   }
   
   .txt2 {
-    font-family: myFirstFont;
+     
     font-size: 13px;
     line-height: 1.5;
     color: #666666;

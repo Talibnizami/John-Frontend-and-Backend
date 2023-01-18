@@ -1,6 +1,6 @@
 .sssf{
     font-size: 3rem;
-  font-family: myFirstFont;
+   
 }
 .tt{
     margin: none;
@@ -19,11 +19,13 @@
     font-size: 1.4rem;
 }
 .gjhas{
-   
+   position: relative;
+   right: 350px;
+   top: 40px;
 }
 .memberShip{
     font-size: 3rem;
-  font-family: myFirstFont;
+   
 }
 .dfsk{
     max-width: 1000px;
@@ -44,7 +46,7 @@
 .gsvcf{
     border-bottom:1px solid rgb(136, 136, 136);
    margin-top: 40px;
-  font-family: myFirstFont;
+   
 }
 .Text-size-set{
     font-size: 2rem;
