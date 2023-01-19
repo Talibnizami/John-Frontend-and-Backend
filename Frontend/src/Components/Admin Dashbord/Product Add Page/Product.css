@@ -1,0 +1,50 @@
+.asdasdasdasdasdas{
+    background-color: #161717;
+}
+.asddasdasdasdasdas{
+    height: 58vmax;
+}
+.mkbdsds{
+    /* border: 1px solid white; */
+    width: 150px;
+    margin: auto;
+}
+.dasdsd{
+    font-family: serif;
+    font-size: 3rem;
+}
+.elokpkk{
+    position: absolute;
+    top: 20px;
+}
+.file-input__input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.file-input{
+      margin: 32px;
+
+  }
+  .file-input__label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 12px;
+    background-color: #4245a8;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  }
+  
+  .file-input__label svg {
+    height: 16px;
+    margin-right: 4px;
+  }
+  

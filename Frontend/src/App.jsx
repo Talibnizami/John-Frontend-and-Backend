@@ -19,6 +19,9 @@ import AddtoCard from './Components/AddtoCard';
 import SignupForm2 from './Components/SignupForm2';
 import LogInPage from './Components/Signup';
 import Header from './Components/Header/Header';
+import  Sidebar  from './Components/Admin Dashbord/Sidebar';
+import Dashbord from './Components/Admin Dashbord/Dashbord';
+import AddProduct from './Components/Admin Dashbord/Product Add Page/addProduct';
 // import AdminDashboard from './Components/Admin Dashbord/AdminDashboard';
 function App() {
   return (
@@ -42,7 +45,8 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path={"/"} element={<Home />} />
+          <Route path={"/"} element={<Dashbord />} />
+          <Route path={"/AddProduct"} element={<AddProduct />} />
           <Route path={"/Login"} element={<Login />} />
           <Route path={"/AddtoCard"} element={<AddtoCard/>} />
           <Route path={"/Signup"} element={<LogInPage />} />

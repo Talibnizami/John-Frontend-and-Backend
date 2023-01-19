@@ -8,7 +8,15 @@ const userSchema = new mongoose.Schema({
     password: { type: String, required: true },
     createdOn: { type: Date, default: Date.now },
 });
+const ProductSchema = new mongoose.Schema({
+    name : { type: String },
+    price: { type: String, required: true },
+    description : { type: String, required: true },
+    image : { type: String, required: true } , 
+    createdOn: { type: Date, default: Date.now },
+});
 const userModel = mongoose.model('Users', userSchema);
+const ProductModel = mongoose.model('Products', ProductSchema);
 
 mongoose.connect(mongodbURI);
 ////////////////mongodb connected disconnected events///////////////////////////////////////////////
@@ -35,4 +43,4 @@ process.on('SIGINT', function () {/////this function will run jst before app is 
 });
 ////////////////mongodb connected disconnected events///////////////////////////////////////////////
 
-export default userModel
+export default  {ProductModel ,userModel } 

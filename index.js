@@ -11,15 +11,17 @@ import loginsignup from './Routes/Login and Sign.js'
 import userModel from './DataBase/dataBase.js';
 const SECRET = process.env.SECRET || "topsecret";
 import jwt from 'jsonwebtoken';
+import Product from './Routes/Products.js'
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: ['https://dull-gold-leopard-sari.cyclic.app'  ,  ''  , "*"],
+    origin: ['https://dull-gold-leopard-sari.cyclic.app'  ,  'http://localhost:8000'  , "*"],
     credentials: true
 }));
 app.use(express.json());
 app.use(cookieParser());
 app.use('/api/v1', loginsignup) 
+app.use('/api/v1', Product ) 
 app.use('/api/v1', (req, res, next) => {
 
     console.log("req.cookies: ", req.cookies);
