@@ -45,7 +45,7 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path={"/"} element={ <Home/>} />
+          <Route path={"/"} element={<Dashbord />} />
           <Route path={"/AddProduct"} element={<AddProduct />} />
           <Route path={"/Login"} element={<Login />} />
           <Route path={"/AddtoCard"} element={<AddtoCard/>} />

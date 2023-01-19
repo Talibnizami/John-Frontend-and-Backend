@@ -79,6 +79,7 @@ setDescription(e.target.value)
          <div class="file-input">
       <input  onChange={(event)=>{
         		setInput(event.target.files[0]);
+            console.log(Input)
                 var url = URL.createObjectURL(Input)
                 document.getElementById("img22").innerHTML = `<img src="${url}" alt="" id="img"> `
         // setInput(e.files[0])
