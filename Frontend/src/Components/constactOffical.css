@@ -423,6 +423,24 @@ padding-top: 20px 0px;
     }
 
   }
+  @media (max-width:665px)
+  {
+ 
+    .fokli{
+      margin-left: 0px;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    }
+    .headfill23{
+      width: auto;
+      margin-left: 45px;
+    }
+    .headfill2{
+      width: auto;
+    }
+  }
 
 
 
