@@ -15,7 +15,8 @@ const productSchema = new mongoose.Schema({
     name : { type: String },
     price: { type: String , required: true },
     description : { type: String, required: true },
-    imageUrl: { type: String },
+    imageUrl: { type: String ,  required: true},
+    category: { type: String ,  required: true },
     createdOn: { type: Date, default: Date.now },
 });
 export const tweetModel = mongoose.model('tweets', productSchema);

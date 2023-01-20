@@ -32,7 +32,7 @@ const getData = async () =>{
     tweetModel.find({}, (err, data) => {
         if (!err) {
             res.send({
-                message: "got all products successfully",
+                message: "Got all products successfully",
                 data: data
             })
         } else {

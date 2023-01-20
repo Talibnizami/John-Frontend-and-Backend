@@ -14,11 +14,11 @@ const AllProduct = () => {
 
   const getAllProducts = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/api/v1/product`);
+      const response = await axios.get(`http://localhost:8000/api/v1/products`);
       console.log("response: ", response);
-      // console.log(products);
-      // setLoadProduct(!loadProduct)
-      // setProducts(response.data.data.reverse());
+      console.log(products);
+      setLoadProduct(!loadProduct)
+      setProducts(response.data.data.reverse());
     } catch (error) {
       console.log("error in getting all products", error);
     }
@@ -28,9 +28,10 @@ const AllProduct = () => {
     console.log('asdasd')
 
     
+    getAllProducts()
     // return () => {
-    //   getAllProducts()
-    // }
+    //   console.log('Cleanup Function');
+    //  }
 }, [])
 
 
@@ -38,7 +39,6 @@ const AllProduct = () => {
 
   return (
     <div>
-      <button onClick={getAllProducts} >DDSFDSFDSf</button>
 <div className='bg-black  text-white'> Spend $50 for free shipping</div>
       <Header />
       <div className='mmqqoop'>
@@ -62,17 +62,19 @@ const AllProduct = () => {
 
 <div  className='asfddsfdsfdsmkj' >
 
-<div class="product-card">
+
+{products.map((eachProduct, i) => (   
+  <div   key={i}  class="product-card">
 		{/* <div class="badge">Hot</div> */}
 		<div class="product-tumb">
-			<img src="https://i.imgur.com/xdbHo4E.png" alt=""/>
+			<img src={eachProduct.imageUrl} alt=""/>
 		</div>
 		<div class="product-details">
-			<span class="product-catagory">Women,bag</span>
-			<h4><a href="">Women leather bag</a></h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+			<span class="product-catagory">{eachProduct.name}</span>
+			<h4><a href="">{eachProduct.category}</a></h4>
+			<p>{eachProduct.description}</p>
 			<div class="product-bottom-details">
-				<div class="product-price"><small>$96.00</small>$230.99</div>
+				<div class="product-price">{eachProduct.price}</div>
 				<div class="product-links">
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
   Add Product 
@@ -81,27 +83,20 @@ const AllProduct = () => {
 				</div>
 			</div>
 		</div>
-	</div>
-<div class="product-card">
-		{/* <div class="badge">Hot</div> */}
-		<div class="product-tumb">
-			<img src="https://i.imgur.com/xdbHo4E.png" alt=""/>
-		</div>
-		<div class="product-details">
-			<span class="product-catagory">Women,bag</span>
-			<h4><a href="">Women leather bag</a></h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
-			<div class="product-bottom-details">
-				<div class="product-price"><small>$96.00</small>$230.99</div>
-				<div class="product-links">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-  Add Product 
-</button>
-					
-				</div>
-			</div>
-		</div>
-	</div>
+	</div>   
+)) } 
+
+   
+
+
+
+
+
+
+
+
+
+
 
 </div>
 

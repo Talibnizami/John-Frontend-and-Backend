@@ -10,6 +10,7 @@ const [Name ,setName] = useState()
 const [Price ,setPrice] = useState()
 const [Description ,setDescription] = useState()
 const [Input ,setInput] = useState()
+const [category ,Setcategory] = useState()
 const baseUrl = 'http://localhost:8000/api/v1'
 const sendData = ()=>{
 if(!Name || !Input || !Price || !Description ) {
@@ -23,6 +24,7 @@ formData.append("Name", Name);
 formData.append("Price", Price);
 formData.append("Description", Description);
 formData.append("Image", Input );
+formData.append("category", category );
 
 
   axios({
@@ -41,11 +43,6 @@ formData.append("Image", Input );
 }
 
    
-    // var url = URL.createObjectURL(Input)
-    // document.getElementById("img22").innerHTML = `<img src="${url}" alt="" id="img"> `
-
-// console.log(url)
-  
 }
 
   return (
@@ -67,6 +64,13 @@ setName(e.target.value)
            <input    onChange={(e)=>{
 setPrice(e.target.value)
            }}  type="number" required='true'  id="twitter" name="twitter" placeholder="Enter Product Price" class="border  border-gray-300 shadow p-3 w-full rounded mb-"/>
+    
+         </div>
+         <div class="mb-5">
+           <label for="twitter" class="block mb-2 font-bold text-white">Category</label>
+           <input    onChange={(e)=>{
+Setcategory(e.target.value)
+           }}  type="text" required='true'  id="twitter" name="twitter" placeholder="Enter Product Category" class="border  border-gray-300 shadow p-3 w-full rounded mb-"/>
     
          </div>
          <div class="mb-5">

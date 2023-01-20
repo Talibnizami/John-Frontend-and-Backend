@@ -76,6 +76,7 @@ router.post('/product', uploadMiddleware.any(), (req, res) => {
                                 price: body.Price,
                                 imageUrl: urlData[0],
                                 description: body.Description,
+                                category : body.category
                             })
 
                             addPRoduct.save().then((res) => {
