@@ -2,7 +2,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import cookieParser from 'cookie-parser';
 const router = express.Router()
-import ProductModel from '../DataBase/dataBase.js'
+import { tweetModel } from '../DataBase/dataBase.js';
 import { stringToHash, varifyHash } from "bcrypt-inzi"
 import jwt from 'jsonwebtoken';
 const SECRET = process.env.SECRET || "topsecret";
@@ -21,13 +21,18 @@ const storageConfig = multer.diskStorage({
     }
 })
 var uploadMiddleware = multer({ storage: storageConfig })
+
 router.post('/product', uploadMiddleware.any(), (req, res) => {
     try {
+
+
 
         const body = req.body;
 
         if ( // validation
-            !body.Name
+            !body.Name ||
+            !body.Price  || 
+            !body.Description
         ) {
             res.status(400).send({
                 message: "required parameters missing",
@@ -66,19 +71,31 @@ router.post('/product', uploadMiddleware.any(), (req, res) => {
                                 console.error(err)
                             }
 
-                            
-                            // ProductModel.create({
+                            let addPRoduct = new tweetModel({
+                                name: body.Name,
+                                price: body.Price,
+                                imageUrl: urlData[0],
+                                description: body.Description,
+                            })
+
+                            addPRoduct.save().then((res) => {
+                                // res.send(res)
+
+                                console.log(res,"ProDUCT ADD");
+                            })
+
+                            // tweetModel.create({
                             //     name : body.Name,  
                             //     price: body.Price,
-                            //     image: urlData[0],
-                            //     description : body.Description
+                            //     imageUrl: urlData[0],
+                            //     description : body.Description,
                             // },
                             //     (err, saved) => {
                             //         if (!err) {
                             //             console.log("saved: ", saved);
 
                             //             res.send({
-                            //                 message: "Product added successfully"
+                            //                 message: "tweet added successfully"
                             //             });
                             //         } else {
                             //             console.log("err: ", err);
@@ -101,53 +118,24 @@ router.post('/product', uploadMiddleware.any(), (req, res) => {
         console.log("error: ", error);
     }
 })
-
-
-
-
-
-// router.post('/product', upload.any() ,  (req, res) => {
-//     const body = req.body;
-
-//     console.log("Body"  ,     body)
-//     if ( 
-//         !body.name
-//         || !body.price
-//         || !body.description
-        
-//     ) {
-//         res.status(400).send({
-//             message: "required parameters missing",
+// router.get("/AllProducts", (req, res) => {
+//     tweetModel.find({}, (err, data) => {
+//       if (!err) {
+//         res.send({
+//           message: "got all cutomers successfully",
+//           data: data,
 //         });
-//         return;
-//     }
+//       } else {
+//         res.status(500).send({
+//           message: "server error",
+//         });
+//       }
+//     });
+//   });
 
-//     // console.log(body.name)
-//     // console.log(body.price)
-//     // console.log(body.description)
-//     // console.log(body.image)
 
 
-//     // ProductModel.create({
-//     //     name: body.name,
-//     //     price: body.price,
-//     //     description: body.description,
-//     //     image  : body.image
-//     // },
-//     //     (err, saved) => {
-//     //         if (!err) {
-//     //             console.log(saved);
 
-//     //             res.send({
-//     //                 message: "product added successfully"
-//     //             });
-//     //         } else {
-//     //             res.status(500).send({
-//     //                 message: "server error"
-//     //             })
-//     //         }
-//     //     })
-// })
 
 
 

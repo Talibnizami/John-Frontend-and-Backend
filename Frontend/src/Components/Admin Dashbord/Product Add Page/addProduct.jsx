@@ -15,14 +15,14 @@ const sendData = ()=>{
 if(!Name || !Input || !Price || !Description ) {
     alert('Product Not Added')
 }else{
+  alert('Product Added ')
   let formData = new FormData();
 
 console.log(Input);
-
-  formData.append("Image",  Input );
-  formData.append("Name", Name);
-  formData.append("Price", Price);
-  formData.append("Description", Description);
+formData.append("Name", Name);
+formData.append("Price", Price);
+formData.append("Description", Description);
+formData.append("Image", Input );
 
 
   axios({

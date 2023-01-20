@@ -1,4 +1,4 @@
-import React, { useRef, useState  , useEffect  } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import axios from 'axios';
 import './Home.css'
 import './home.scss';
@@ -19,7 +19,7 @@ import tag from '../assets/images/crown-img.png'
 import girl from '../assets/images/member-1.png'
 import boy from '../assets/images/member-2.jpg'
 import thirdboy from '../assets/images/member-3.jpg'
-import hidden from '../assets/images/Group-img.png'
+import GroupImage from '../assets/images/Group-img.png'
 import shirt from '../assets/images/shirt-2.png'
 import homeHat from '../assets/images/home-hat.png'
 import homeHoodies from '../assets/images/home-hoodies.png'
@@ -39,7 +39,7 @@ const Home = () => {
 
 
 
-  
+
   useEffect(() => {
 
     const getProfile = async () => {
@@ -176,7 +176,7 @@ const Home = () => {
           </div>
 
           <div class="member-text text-center">
-            <h4  className='mpos1' >  Menace Shirt Design</h4>
+            <h4 className='mpos1' >  Menace Shirt Design</h4>
             <p class="over-line mkop2">Retail: $90.00</p>
             <p className='nmji1 ' >3 For $30 (B1G2)</p>
           </div>
@@ -239,13 +239,13 @@ const Home = () => {
           </div>
 
           <div class="member-text text-center">
-            <h4  className='mpos1' >Menace Shirt Design</h4>
+            <h4 className='mpos1' >Menace Shirt Design</h4>
             <p class="over-line mkop2">Retail: $90.00</p>
-            <p  className='nmji1'>3 For $30 (B1G2)</p>
+            <p className='nmji1'>3 For $30 (B1G2)</p>
           </div>
 
           <div class="member-link text-center">
-            <a href="#"  className='mjij1'>NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <a href="#" className='mjij1'>NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></a>
           </div>
         </div>
         <div id="">
@@ -316,7 +316,11 @@ const Home = () => {
           <div className='nono'>
             <div className='mokli'>
               <img src={short} alt="" />
+              <div class="group-img">
+                <a href="#"> <img src={GroupImage} class="img-fluid" alt="" /> </a>
+              </div>
             </div>
+
             <div className='fokli'>
               <img className='filterqwe' src={mesurment} alt="" />
               <p className='headfill23 text-white'>
@@ -399,7 +403,7 @@ const Home = () => {
       {/* Sixth Part */}
 
       <div className='hjsgaisa33'>
-        <h1  style={{'font-family': 'fantasy' , 'font-size': '77px'}} className='headfill'     >Trending Now</h1>
+        <h1 style={{ 'font-family': 'fantasy', 'font-size': '77px' }} className='headfill'     >Trending Now</h1>
         <div className='jkloun'>
           <p className='headfill2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a tempus augue, id convallis est. Nulla neque sapien, mattis
             at molestie id, auctor faucibus ligula. Pellentesque laoreet luctus erat, at ullamcorper neque feugiat id.</p>
@@ -418,7 +422,7 @@ const Home = () => {
 
         <div className='zxczxczx notcallhonkdfs		flex-col  flex '>
           <img src={girl} alt="" />
-          <h3 className='mt-6  text-xl font-bold nhyjn' style={{'font-family': 'cursive'} }>Menace Shirt Design</h3>
+          <h3 className='mt-6  text-xl font-bold nhyjn' style={{ 'font-family': 'cursive' }}>Menace Shirt Design</h3>
           <h3 className=' my-2 mkop23'>Retail: $90.00</h3>
           <h3 className='my-2 nmji1'>3 For $30 (B1G2)</h3>
           <h3 className=' text-sm	 font-bold mjij12'  >NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></h3>
@@ -427,7 +431,7 @@ const Home = () => {
 
         <div className='zxczxczx notcallhonkdfs  niyvfgbhgaa	mt-16	flex-col  flex	'>
           <img src={boy} alt="" />
-          <h3 className='mt-6  text-xl font-bold nhyjn' style={{'font-family': 'cursive'} }>Menace Shirt Design</h3>
+          <h3 className='mt-6  text-xl font-bold nhyjn' style={{ 'font-family': 'cursive' }}>Menace Shirt Design</h3>
           <h3 className=' my-2  mkop23'>Retail: $90.00</h3>
           <h3 className='my-2 nmji1'>3 For $30 (B1G2)</h3>
           <h3 className=' text-sm	 font-bold mjij12' >NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></h3>
@@ -436,7 +440,7 @@ const Home = () => {
 
         <div className='zxczxczx notcallhonkdfs		flex-col  flex'>
           <img src={thirdboy} alt="" />
-          <h3 className='mt-6  text-xl font-bold nhyjn' style={{'font-family': 'cursive'} }>Menace Shirt Design</h3>
+          <h3 className='mt-6  text-xl font-bold nhyjn' style={{ 'font-family': 'cursive' }}>Menace Shirt Design</h3>
           <h3 className=' my-2 mkop23'>Retail: $90.00</h3>
           <h3 className='my-2 nmji1'>3 For $30 (B1G2)</h3>
           <h3 className=' text-sm	 font-bold mjij12' >NEW VIP MEMEBERSHIP OFFER <i class="fa fa-caret-right" aria-hidden="true"></i></h3>
@@ -448,31 +452,31 @@ const Home = () => {
       <br />
       <br />
       <br />
-<div className='nativeiop'  >
-      <div class="row flex">
-        <div class="col-xs-12 col-sm-6" >
-          <h1 id='teck-colllection-text'>Once Again tatsuthreads defies
-            the odds with the 2k22
-            Collection</h1>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <p className='' id='teck-colllection-textParagraf'>
-            lorem ipsum dolor sit amet, consectetur adipiscing elit. sed euismod libero nec
-            arcu vehicula congue. pellentesque lacinia lobortis efficitur. mauris vel ipsum mi
-            . mauris lacus tellus.lorem ipsum dolor sit amet, consectetur adipiscing elit. sed
-            euismod libero nec arcu vehicula congue.
-            <br />
-            <button className='iutrvh'>DISCOVER US</button>
-            <div class="teck-hr">
-              <hr />
-            </div>
-          </p>
+      <div className='nativeiop'  >
+        <div class="row flex">
+          <div class="col-xs-12 col-sm-6" >
+            <h1 id='teck-colllection-text'>Once Again tatsuthreads defies
+              the odds with the 2k22
+              Collection</h1>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <p className='' id='teck-colllection-textParagraf'>
+              lorem ipsum dolor sit amet, consectetur adipiscing elit. sed euismod libero nec
+              arcu vehicula congue. pellentesque lacinia lobortis efficitur. mauris vel ipsum mi
+              . mauris lacus tellus.lorem ipsum dolor sit amet, consectetur adipiscing elit. sed
+              euismod libero nec arcu vehicula congue.
+              <br />
+              <button className='iutrvh'>DISCOVER US</button>
+              <div class="teck-hr">
+                <hr />
+              </div>
+            </p>
 
-        </div>
-        <div class="col-xs-12 col-sm-12">
+          </div>
+          <div class="col-xs-12 col-sm-12">
 
+          </div>
         </div>
-      </div>
       </div>
       {/* Nine  */}
 
@@ -488,7 +492,7 @@ const Home = () => {
               <img src={homeTshirt} class="img-fluid" />
             </div>
             <div class="product-name">
-              <h4  className='vhgnsaajdss'  >Joggers</h4>
+              <h4 className='vhgnsaajdss'  >Joggers</h4>
             </div>
           </div>
 
@@ -500,7 +504,7 @@ const Home = () => {
               <img src={homeHat} class="img-fluid" />
             </div>
             <div class="product-name">
-              <h4  className='vhgnsaajdss'  >Hats</h4>
+              <h4 className='vhgnsaajdss'  >Hats</h4>
             </div>
 
           </div>
@@ -523,18 +527,18 @@ const Home = () => {
               <img src={homeTshirt} class="img-fluid" />
             </div>
             <div class="product-name">
-              <h4  className='vhgnsaajdss'  >Joggers</h4>
+              <h4 className='vhgnsaajdss'  >Joggers</h4>
             </div>
           </div>
 
 
 
-          <div class="flex flex-col   vfrtgbnhy w-full m-6 overflow-hidden sm:w-52">
+          <div class="flex flex-col  vfrtgbnhy w-full m-6 overflow-hidden sm:w-52">
             <div class="tatsu-collection">
               <img src={homeShorts} class="img-fluid" />
             </div>
             <div class="product-name">
-              <h4  className='vhgnsaajdss'  >Shorts</h4>
+              <h4 className='vhgnsaajdss'  >Shorts</h4>
             </div>
           </div>
 

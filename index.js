@@ -12,16 +12,38 @@ import userModel from './DataBase/dataBase.js';
 const SECRET = process.env.SECRET || "topsecret";
 import jwt from 'jsonwebtoken';
 import Product from './Routes/Products.js'
+import { tweetModel } from './DataBase/dataBase.js';
 app.use(express.json());
 app.use(cookieParser());
+app.use(cors())
 app.use(cors({
-    origin: ['https://dull-gold-leopard-sari.cyclic.app'  ,  'http://localhost:8000'  , "*"],
+    origin: ['https://dull-gold-leopard-sari.cyclic.app'  ,  'http://localhost:8000' ,   'http://localhost:3000'   , "*"],
     credentials: true
 }));
-app.use(express.json());
 app.use(cookieParser());
+app.use(express.json());
+app.get('/api/v1/products', (req, res) => {
+console.log(req.ip)
+const getData = async () =>{
+        const result = await tweetModel.find()
+        console.log(result)
+    }
+    getData()
+    tweetModel.find({}, (err, data) => {
+        if (!err) {
+            res.send({
+                message: "got all products successfully",
+                data: data
+            })
+        } else {
+            res.status(500).send({
+                message: "server error"
+            })
+        }
+    });
+})
+app.use('/api/v1', Product) 
 app.use('/api/v1', loginsignup) 
-app.use('/api/v1', Product ) 
 app.use('/api/v1', (req, res, next) => {
 
     console.log("req.cookies: ", req.cookies);

@@ -16,7 +16,7 @@ const LogInPage = () => {
 	const [firstName, setfirstName] = useState()
 	const [email, setEmail] = useState()
 	const [password, setepassword] = useState()
-let  baseUrl = "https://jade-lonely-marlin.cyclic.app/api/v1"
+let  baseUrl = "http://localhost:8000/api/v1"
 const signup = async () => {
     try {
      let data  = await axios.post(`${baseUrl}/signup`, {

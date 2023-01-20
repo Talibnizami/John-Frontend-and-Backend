@@ -119,7 +119,7 @@ const getData = ()=>{
                 {/* <Divider /> */}
                 <p id="nav-item"><Link to="/" class="text-white">Home</Link></p>
                 <Divider />
-                <p id="nav-item"><Link to="" class="text-white">All Products</Link></p>
+                <p id="nav-item"><Link to="/AllProduct" class="text-white">All Products</Link></p>
                 <Divider />
                 <p id="nav-item"><Link to="/collection" class="text-white">Collection</Link></p>
                 <Divider />
