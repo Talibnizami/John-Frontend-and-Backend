@@ -9,33 +9,28 @@ export const AllProductDashboad = () => {
   const [loadProduct, setLoadProduct] = useState(false)
 
 
-  const getAllProducts = async () => {
-    try {
-      const response = await axios.get(`http://localhost:8000/api/v1/products`);
-      console.log("response: ", response);
-      console.log(products);
-      setLoadProduct(!loadProduct)
-      setProducts(response.data.data.reverse());
-    //   console.log(response.data.data.reverse())
-    } catch (error) {
-      console.log("error in getting all products", error);
-    }
-  };
-
+  
   useEffect(() => {
+      const getAllProducts = async () => {
+        try {
+          const response = await axios.get(`http://localhost:8000/api/v1/products`);
+          console.log("response: ", response);
+          console.log(products);
+          setLoadProduct(!loadProduct)
+          setProducts(response.data.data.reverse());
+        //   console.log(response.data.data.reverse())
+        } catch (error) {
+          console.log("error in getting all products", error);
+        }
+      };
     console.log('asdasd')
 
     
-    getAllProducts()
-    // return () => {
-    //     console.log('Cleanup Function');
-    //  }
-}, [])
-  useEffect(() => {
-    console.log('ASdsa')
+    return () => {
+        getAllProducts()
+        console.log('Cleanup Function');
+     }
 }, [loadProduct])
-
-
 
 const deleteData = async (id)=>{
     try {
