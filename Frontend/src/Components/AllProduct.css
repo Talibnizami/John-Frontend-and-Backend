@@ -66,7 +66,7 @@
 }
 
 .product-details p {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 22px;
     margin-bottom: 18px;
     color: #999;
@@ -118,4 +118,19 @@
 
 .product-links a:hover {
     color: #fbb72c;
+}
+.fdsfdsfdsfdsfds{
+    font-family: cursive;
+    font-size: 1rem;
+}
+.fdsfdsfdsfdsfds1{
+    
+    font-family: cursive;
+    font-size: 2rem;
+}
+.nasdklasndklasd{
+    /* display: none; */
+    /* font-size: 20rem; */
+    font-weight: bolder;
+    font-family: cursive;
 }

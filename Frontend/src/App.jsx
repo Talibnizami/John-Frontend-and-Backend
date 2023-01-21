@@ -23,6 +23,8 @@ import  Sidebar  from './Components/Admin Dashbord/Sidebar';
 import Dashbord from './Components/Admin Dashbord/Dashbord';
 import AddProduct from './Components/Admin Dashbord/Product Add Page/addProduct';
 import AllProduct from './Components/AllProduct';
+import { AllProductDashboad } from './Components/Admin Dashbord/Product Add Page/AllProduct';
+// import  {AllProduct }   from './Components/Admin Dashbord/Product Add Page/AllProduct';
 // import AdminDashboard from './Components/Admin Dashbord/AdminDashboard';
 function App() {
   return (
@@ -49,6 +51,7 @@ function App() {
           <Route path={"/"} element={<Home />} />
           <Route path={"/Dashbord"} element={<Dashbord />} />
           <Route path={"/AllProduct"} element={<AllProduct />} />
+          <Route path={"/AllProductDashboard"} element={<AllProductDashboad />} />
           <Route path={"/AddProduct"} element={<AddProduct />} />
           <Route path={"/Login"} element={<Login />} />
           <Route path={"/AddtoCard"} element={<AddtoCard/>} />

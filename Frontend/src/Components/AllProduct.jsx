@@ -70,11 +70,11 @@ const AllProduct = () => {
 			<img src={eachProduct.imageUrl} alt=""/>
 		</div>
 		<div class="product-details">
-			<span class="product-catagory">{eachProduct.name}</span>
-			<h4><a href="">{eachProduct.category}</a></h4>
-			<p>{eachProduct.description}</p>
+			<span class="product-catagory  fdsfdsfdsfdsfds text-lg  font-semibold">{eachProduct.name}</span>
+			<h4  className='fdsfdsfdsfdsfds1'   ><a >{eachProduct.category}</a></h4>
+			<p  className='nasdklasndklasd'  >{eachProduct.description}</p>
 			<div class="product-bottom-details">
-				<div class="product-price">{eachProduct.price}</div>
+				<div class="product-price">${eachProduct.price}</div>
 				<div class="product-links">
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
   Add Product 

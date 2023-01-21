@@ -22,6 +22,29 @@ app.use(cors({
 }));
 app.use(cookieParser());
 app.use(express.json());
+app.delete("/api/v1/customer/:id", (req, res) => {
+    const id = req.params.id;
+  
+    tweetModel.deleteOne({ _id: id }, (err, deletedData) => {
+      console.log("deleted: ", deletedData);
+      if (!err) {
+        if (deletedData.deletedCount !== 0) {
+          res.send({
+            message: "Product has been deleted successfully",
+          });
+        } else {
+          res.status(404);
+          res.send({
+            message: "No Product found with this id: " + id,
+          });
+        }
+      } else {
+        res.status(500).send({
+          message: "server error",
+        });
+      }
+    });
+  });
 app.get('/api/v1/products', (req, res) => {
 console.log(req.ip)
 const getData = async () =>{
