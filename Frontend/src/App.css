@@ -43,15 +43,34 @@ color: white;
     justify-content: center;
     margin-left: 0%;
   }
+  
   .gjhas{
     align-items: center;
       justify-content: center;
   }
+  .inner{
+    margin-top: 20px; 
+  }
+.secondpartert{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+.trWrapper {
+    
+    margin-top: 25px;
+}
+
+
+
+
+
+
     }
 
 
 
     .trWrapper{
-      position: relative;
-      bottom: 80px;
+      margin-top: 25px;
     }

@@ -15,13 +15,59 @@ import Product from './Routes/Products.js'
 import { tweetModel } from './DataBase/dataBase.js';
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors())
 app.use(cors({
-    origin: ['https://dull-gold-leopard-sari.cyclic.app'  ,  'http://localhost:8000' ,   'http://localhost:3000'   , "*"],
+    origin: [   'http://localhost:3000'   , "*"],
     credentials: true
 }));
 app.use(cookieParser());
 app.use(express.json());
+
+app.put('/api/v1/product/:id', async (req, res) => {
+
+    const body = req.body;
+    const id = req.params.id;
+console.log(body)
+console.log(id)
+    // if (
+    //     !body.name ||
+    //     !body.price ||
+    //     !body.description||
+    //     !body.category
+    // ) {
+    //     res.status(400).send(` required parameter missing. example request body:
+    //     {
+    //         "name": "value",
+    //         "price": "value",
+    //         "description": "value"
+    //     }`)
+    //     return;
+    // }
+
+    // try {
+
+
+    //     let data = await tweetModel.findByIdAndUpdate(id,
+    //         {
+    //             name: body.Name,
+    //             price: body.Price,
+    //             description: body.Description,
+    //             category : body.category
+    //         },
+    //         { new: true }
+    //     ).exec();
+
+    //     console.log('updated: ', data);
+
+    //     res.send({
+    //         message: "product Update  Successfully"
+    //     });
+
+    // } catch (error) {
+    //     res.status(500).send({
+    //         message: "server error"
+    //     })
+    // }
+})
 app.delete("/api/v1/customer/:id", (req, res) => {
     const id = req.params.id;
   

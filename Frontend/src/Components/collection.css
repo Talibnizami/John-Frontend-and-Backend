@@ -110,3 +110,14 @@ margin-right: 12px;
   .hds{
     margin-bottom: 400px;
   }
+
+
+  @media (max-width:545px) {
+.headfill23{
+  text-align: left;
+  font-size: 15px;
+}
+.head3bg{
+  font-size: 1.3rem;
+}
+  }

@@ -23,6 +23,8 @@ import  Sidebar  from './Components/Admin Dashbord/Sidebar';
 import Dashbord from './Components/Admin Dashbord/Dashbord';
 import AddProduct from './Components/Admin Dashbord/Product Add Page/addProduct';
 import AllProduct from './Components/AllProduct';
+import GetData1 from './GetData1';
+// import Modaltryty from './Components/Modal/modal';
 import { AllProductDashboad } from './Components/Admin Dashbord/Product Add Page/AllProduct';
 // import  {AllProduct }   from './Components/Admin Dashbord/Product Add Page/AllProduct';
 // import AdminDashboard from './Components/Admin Dashbord/AdminDashboard';
@@ -49,6 +51,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path={"/"} element={<Home />} />
+          <Route path={"/Signup3"} element={<Signup3/>} />
+          <Route path={"/Productdetail"} element={<Productdetail/>} />
+          {/* <Route path={"/Third"} element={<Third />} /> */}
+          <Route path={"/GetData1"} element={<GetData1 />} />
           <Route path={"/Dashbord"} element={<Dashbord />} />
           <Route path={"/AllProduct"} element={<AllProduct />} />
           <Route path={"/AllProductDashboard"} element={<AllProductDashboad />} />
@@ -64,6 +70,7 @@ function App() {
           <Route path={"/collection"} element={<Collection />} />
           <Route path={"/Tatsu"} element={<Tatsu />} />
           <Route path={"/about"} element={<About />} />
+          <Route path={"/Contactuss"} element={<Contactuss />} />
           <Route path={"/AddtoCard"} element={<AddtoCard />} />
           <Route path={"/DashbordOrderAdmin"} element={<DashbordOrderAdmin />} />
           <Route path={"/MyreviewAdmin"} element={<MyreviewAdmin />} />

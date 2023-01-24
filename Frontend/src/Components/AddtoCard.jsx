@@ -15,14 +15,17 @@ import shopping from '../assets/images/shopping-icon.svg'
  import Header from './Header/Header';
 
 const AddtoCard = () => {
-    const [product1,Setproduct1 ] = useState(2)
+    const [product1,Setproduct1 ] = useState(1)
     const [product2,Setproduct2 ] = useState(1)
+   const [price, setPrice ] = useState(2)
+   const [price1, setPrice1 ] = useState(2)
+   console.log(typeof price) 
     return (
       <div>
         <div className='bg-black py-1  text-center	  text-white'> Spend $50 for free shipping</div>
   
-  {/*  */}
-     <div class="CartContainer">
+        <Header />
+     <div class="CartContainer   mt-10">
           <div class="Header">
             <h3 class="Heading">QUANTITY</h3>
             <h3 class="Heading">QUANTITY</h3>
@@ -42,65 +45,42 @@ const AddtoCard = () => {
               <div class="counter">
                 <div class="btn" onClick={()=>{
                   Setproduct1(product1+1)
+
+                  setPrice( (value)=>{
+      setPrice(price1+ value)
+                   })
               }}   >+</div>
                 <div class="count">{product1}</div>
                 <div class="btn" onClick={(e)=>{
   e.preventDefault()
-  if(product1 != 0 ){
+  if(product1 != 1 ){
                       
       Setproduct1(product1-1)
+      setPrice( price - price1  )     
   }
                   
               }} >-</div>
               </div>
               <div class="prices">
-                <div class="amount">$2.99</div>
-                <div class="save"><u>Save for later</u></div>
-                <div class="remove"><u>Remove</u></div>
+                <div class="amount">${price}</div>
+                {/* <div class="save"><u>Save for later</u></div>
+                <div class="remove"><u>Remove</u></div> */}
               </div>
           </div>
   
-          <div class="Cart-Items pad">
-              <div class="image-box">
-                <img src={shirt} style={{ "height":"120px" }} />
-              </div>
-              <div class="about">
-                <h1 class="title">Grapes Juice</h1>
-                {/*   <h3 class="subtitle">250ml</h3> */}
-                {/* <img src={image} style={{ "height":"30px" }}/> */}
-              </div>
-              <div class="counter">
-                <div class="btn"  onClick={()=>{
-                  Setproduct2(product2+1)
-              }}  >+</div>
-                <div class="count">{product2}</div>
-                <div class="btn"
-              onClick={(e)=>{
-                e.preventDefault()
-                  if(product2 != 0 ){
-                      
-                      Setproduct2(product2-1)
-                  }
-  
-              }}
-              >-</div>
-              </div>
-              <div class="prices">
-                <div class="amount">$3.19</div>
-                <div class="save"><u>Save for later</u></div>
-                <div class="remove"><u>Remove</u></div>
-              </div>
-          </div>
+        
         <hr/> 
         <div class="checkout">
         <div class="total">
           <div>
             <div class="Subtotal">Sub-Total</div>
-            <div class="items">2 items</div>
+            <div class="items">{product1} items</div>
           </div>
-          <div class="total-amount">$6.18</div>
+          <div class="total-amount">${price}</div>
         </div>
-        <button class="buttondcdscds">Checkout</button></div>
+        <button class="buttondcdscds"  onClick={()=>{
+          alert('Working On Project ')
+        }}   >Checkout</button></div>
      </div>
   
   
@@ -108,9 +88,6 @@ const AddtoCard = () => {
   
       <div className="pg-footer">
         <footer className="footer">
-          {/* <svg className="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
-            <path className="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
-          </svg> */}
           <div className="footer-content">
             <div className="footer-content-column">
               <div className="footer-logo">

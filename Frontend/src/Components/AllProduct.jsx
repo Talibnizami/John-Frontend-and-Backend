@@ -3,14 +3,14 @@ import './AllProduct.css'
 import Header from './Header/Header'
 import './subcription.css'
 import caroImage from '../assets/images/banner-img.png'
-import { Link } from 'react-router-dom'
 import axios from "axios";
+import { useNavigate , Link } from 'react-router-dom'
 import { useState, useEffect } from "react";
 import Footer from './Footer'
+
 const AllProduct = () => {
   const [products, setProducts] = useState([]);
   const [loadProduct, setLoadProduct] = useState(false)
-
 
   const getAllProducts = async () => {
     try {
@@ -72,13 +72,18 @@ const AllProduct = () => {
 		<div class="product-details">
 			<span class="product-catagory  fdsfdsfdsfdsfds text-lg  font-semibold">{eachProduct.name}</span>
 			<h4  className='fdsfdsfdsfdsfds1'   ><a >{eachProduct.category}</a></h4>
-			<p  className='nasdklasndklasd'  >{eachProduct.description}</p>
+			<p  className='text-black'  >{eachProduct.description}</p>
 			<div class="product-bottom-details">
 				<div class="product-price">${eachProduct.price}</div>
 				<div class="product-links">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-  Add Product 
+          <Link  to={'/Signup3'}  state={{
+            id : eachProduct._id
+          }}  >
+
+                <button    class="bg-red-700 hover:bg-black text-white font-bold py-4 px-4 rounded-full">
+                <i class="fa-solid fa-cart-shopping"></i>   Buy Now  
 </button>
+          </Link>
 					
 				</div>
 			</div>

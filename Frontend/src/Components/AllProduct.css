@@ -66,10 +66,12 @@
 }
 
 .product-details p {
+    color: black;
+    overflow: hidden;
     font-size: 17px;
     line-height: 22px;
     margin-bottom: 18px;
-    color: #999;
+    /* color: #999; */
 }
 
 .product-bottom-details {
@@ -91,8 +93,8 @@
 }
 
 .product-price {
-    font-size: 18px;
-    color: #fbb72c;
+    font-size: 30px;
+    color:   red;
     font-weight: 600;
 }
 
@@ -120,13 +122,17 @@
     color: #fbb72c;
 }
 .fdsfdsfdsfdsfds{
+    color: red;
     font-family: cursive;
     font-size: 1rem;
 }
 .fdsfdsfdsfdsfds1{
-    
     font-family: cursive;
     font-size: 2rem;
+}
+.fdsfdsfdsfdsfds12{
+    color: red;
+
 }
 .nasdklasndklasd{
     /* display: none; */

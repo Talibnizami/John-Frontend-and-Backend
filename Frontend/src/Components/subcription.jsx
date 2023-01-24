@@ -157,12 +157,12 @@ const Subcription = () => {
 
         <div class="wrapper">
           <div class="table basic pmmvfd ">
-            <div class=""><h2   className='font-5xl'>SILVER</h2></div>
-            <div class="aj_p"><p>Ideal solution for beginners</p></div>
+            <div class=""><h2  className="mkoiu89" style={{"font-size" : "2rem" , "font-family" :  "cursive"}}   >SILVER</h2></div>
+            <div class="aj_p"><p   className="mkoiu89" style={{"font-size" : "1rem" , "font-family" :  "cursive"}} >Ideal solution for beginners</p></div>
             <div class="price-section">
               <div class="price-area">
                 <div class="inner-area">
-                  <span class="text">₹$50.0</span>
+                  <span class="text mkoiu899">$50.0</span>
                   {/* <span class="price">29<span style={{"fontSize" : "12px"}}>/mo</span></span> */}
 
                 </div>
@@ -171,7 +171,7 @@ const Subcription = () => {
             <div class="package-name"></div>
             <ul class="features">
               <div class="btn"><button>Add to Cart</button></div>
-              <p class="aj_des">₹159/mo when you renew</p>
+              <p class="aj_des  mkoiu8998">$159/mo when you renew</p>
               <li>
                 <span class="list-name">1 Website</span>
                 <span class="icon check"><i class="fas fa-check"></i></span>
@@ -192,13 +192,13 @@ const Subcription = () => {
             <div><h2>See all features <span class="icon cross"><i class="fa fa-angle-down"></i></span></h2></div>
           </div>
           <div class="table premium pmmvfd  ">
-            <div class=""><h2>GOLD</h2></div>
-            <div class="aj_p"><p>Perfect package for personal</p></div>
+            <div class=""><h2  className="mkoiu89" style={{"font-size" : "2rem" , "font-family" :  "cursive"}} >GOLD</h2></div>
+            <div class="aj_p"><p   className="mkoiu89" style={{"font-size" : "1rem" , "font-family" :  "cursive"}} >Perfect package for personal</p></div>
             {/* <div class="ribbon"><span>BEST VALUE</span></div> */}
             <div class="price-section">
               <div class="price-area">
                 <div class="inner-area">
-                  <span class="text">$100.0</span>
+                  <span class="text mkoiu899">$100.0</span>
                   {/* <span class="price">59<span style="font-size:12px">/mo</span></span> */}
                 </div>
               </div>
@@ -206,7 +206,7 @@ const Subcription = () => {
             <div class="package-name"></div>
             <ul class="features">
               <div class="btn"><button>Add to Cart</button></div>
-              <p class="aj_des">₹159/mo when you renew</p>
+              <p class="aj_des mkoiu8998">$159/mo when you renew</p>
               <li>
                 <span class="list-name">50 Website</span>
                 <span class="icon check"><i class="fas fa-check"></i></span>
@@ -227,12 +227,12 @@ const Subcription = () => {
             <div class="premium_all"><h2>See all features <span class="icon cross"><i class="fa fa-angle-down"></i></span></h2></div>
           </div>
           <div class="table ultimate pmmvfd">
-            <div   className='font-2xl' ><h2>DIAMOND</h2></div>
-            <div class="aj_p"><p>Perfect package for businesses</p></div>
+            <div   className='font-2xl' ><h2   className="mkoiu89" style={{"font-size" : "2rem" , "font-family" :  "cursive"}} >DIAMOND</h2></div>
+            <div class="aj_p"><p  className="mkoiu89" style={{"font-size" : "1rem" , "font-family" :  "cursive"}} >Perfect package for businesses</p></div>
             <div class="price-section">
               <div class="price-area">
                 <div class="inner-area">
-                  <span class="text">$150.0</span>
+                  <span class="text mkoiu899">$150.0</span>
                   {/* <span class="price">99<span style="font-size:12px">/mo</span></span> */}
                 </div>
               </div>
@@ -240,7 +240,7 @@ const Subcription = () => {
             <div class="package-name"></div>
             <ul class="features">
               <div class="btn"><button>Add to Cart</button></div>
-              <p class="aj_des">₹159/mo when you renew</p>
+              <p class="aj_des mkoiu8998">$159/mo when you renew</p>
               <li>
                 <span class="list-name">100 Website</span>
                 <span class="icon check"><i class="fas fa-check"></i></span>

@@ -16,8 +16,16 @@ const LogInPage = () => {
 	const [firstName, setfirstName] = useState()
 	const [email, setEmail] = useState()
 	const [password, setepassword] = useState()
+	const [repassword, Resetepassword] = useState()
 let  baseUrl = "http://localhost:8000/api/v1"
 const signup = async () => {
+
+if(password != repassword){
+alert('Password and Retype Password is  Not Matched')
+}
+
+else {
+
     try {
      let data  = await axios.post(`${baseUrl}/signup`, {
         firstName: firstName,
@@ -29,6 +37,7 @@ navigate('/Login', { replace: true })
     } catch (error) {
       console.log("err>>> ", error)
     }
+}
   }
 
   return (
@@ -81,7 +90,7 @@ console.log(passwordA.current.value)
 					</div>
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
 						<input class="input100" type="password" onChange={(e) => {
-    // setrepassword(e.target.value)
+    Resetepassword(e.target.value)
             }}    name="pass" placeholder=" ReType  Password"/>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">

@@ -1,54 +1,48 @@
 import React from 'react'
-// import '../../AllProduct.css'
 import './allproduct.css'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-// import './'
+import BasicModal from '../../Modal/modal'
 export const AllProductDashboad = () => {
     const [products, setProducts] = useState([]);
-  const [loadProduct, setLoadProduct] = useState(false)
+  const [productsBoolean, setProductsBoolean] = useState(false);
+  const [Delete , setdelete] = useState(false);
 
 
-  
-  useEffect(() => {
-      const getAllProducts = async () => {
-        try {
-          const response = await axios.get(`http://localhost:8000/api/v1/products`);
-          console.log("response: ", response);
-          console.log(products);
-          setLoadProduct(!loadProduct)
-          setProducts(response.data.data.reverse());
-        //   console.log(response.data.data.reverse())
-        } catch (error) {
-          console.log("error in getting all products", error);
-        }
-      };
-    console.log('asdasd')
 
-    
-    return () => {
-        getAllProducts()
-        console.log('Cleanup Function');
-     }
-}, [loadProduct])
 
-const deleteData = async (id)=>{
+  const getAllProducts = async () => {
+    try {
+      const response = await axios.get(`http://localhost:8000/api/v1/products`);
+      console.log("response: ", response);
+      console.log(products);
+      setProducts(response.data.data);
+    } catch (error) {
+      console.log("error in getting all products", error);
+    }
+  };
+
+  const deleteData = async (id)=>{
     try {
       const response = await axios.delete(`http://localhost:8000/api/v1/customer/${id}`)
       console.log("response: ", response.data);
-      setLoadProduct(!loadProduct)
+      setdelete(!Delete)
     } catch (error) {
       console.log("error in getting all products", error);
     }
   }
+
+  useEffect(() => {
+    console.log('asdasd')
+    getAllProducts()
+    // return () => {
+    //   console.log('Cleanup Function');
+    //  }
+}, [Delete , productsBoolean ])
+
   return (
     <div>
-        
-        
         <h1 className='dasfasfkasfhoiasbfbfa'  >AllProduct  Details  </h1>
-
-
-
 
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
@@ -103,7 +97,7 @@ const deleteData = async (id)=>{
                 Delete
                 </td>
                 <td class="px-6 py-4 text-right">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <BasicModal  id={value._id}    />
                 </td>
             </tr>
            </>

@@ -1,0 +1,27 @@
+.asdasdasdasdasdalojubb{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    padding: 0px 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.asdasdasdasdasdalojubb1{
+    background-color: red; /* Green */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

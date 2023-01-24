@@ -7,11 +7,11 @@ import './Sidebar.css'
 const Dashbord = () => {
   return (
     
-    <div>
-   <div  className='flex '   >
+    <div className=' bg-slate-200 h-full'  > 
+   <div  className='flex w-full bg-slate-200 h-auto '   >
 <Sidebar/>
 
-<div   className='bg-slate-200	   w-full		'  >
+<div   className='bg-slate-200 w-4/5'  >
 
 
 <div className='bg-red w-full   flex justify-between' >
@@ -122,9 +122,9 @@ const Dashbord = () => {
             {/* <!-- flex-item --> */}
         </div>
         
-<div  className='flex   justify-center	' >
+<div  className='flex  ml-8  justify-center	' >
 
-  <div class="donut-chart-block block22"> 
+  <div class="donut-chart-block block22  ml-4"> 
                     <h2 class="titular   text-white">OS AUDIENCE STATS</h2>
                     <div class="donut-chart">
 

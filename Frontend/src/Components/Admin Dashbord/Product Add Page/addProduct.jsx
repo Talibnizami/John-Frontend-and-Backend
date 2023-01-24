@@ -12,6 +12,20 @@ const [Description ,setDescription] = useState()
 const [Input ,setInput] = useState()
 const [category ,Setcategory] = useState()
 const baseUrl = 'http://localhost:8000/api/v1'
+
+
+const getInitialState = () => {
+  const value = "Shirt";
+  return value;
+};
+
+const [value, setValue] = useState(getInitialState);
+
+const handleChange = (e) => {
+  setValue(e.target.value);
+};
+
+
 const sendData = ()=>{
 if(!Name || !Input || !Price || !Description ) {
     alert('Product Not Added')
@@ -20,11 +34,12 @@ if(!Name || !Input || !Price || !Description ) {
   let formData = new FormData();
 
 console.log(Input);
+console.log(value)
 formData.append("Name", Name);
 formData.append("Price", Price);
 formData.append("Description", Description);
 formData.append("Image", Input );
-formData.append("category", category );
+formData.append("category", value );
 
 
   axios({
@@ -67,16 +82,23 @@ setPrice(e.target.value)
     
          </div>
          <div class="mb-5">
+          
            <label for="twitter" class="block mb-2 font-bold text-white">Category</label>
-           <input    onChange={(e)=>{
-Setcategory(e.target.value)
-           }}  type="text" required='true'  id="twitter" name="twitter" placeholder="Enter Product Category" class="border  border-gray-300 shadow p-3 w-full rounded mb-"/>
+           <select  class="border  border-gray-300 shadow p-3 w-full rounded mb-"  value={value} onChange={handleChange}>
+        <option value="Shirt">Shirt</option>
+        <option value="Trouser">Trouser</option>
+        <option value="T-Shirt">T-Shirt</option>
+        <option value="Shirt">Shirt</option>
+        <option value="Cap">Cap</option>
+      </select>
+      <p>{`You selected ${value}`}</p>
+           {/* <input     type="text" required='true'  id="twitter" name="twitter" placeholder="Enter Product Category" class=""/> */}
     
          </div>
          <div class="mb-5">
            <label for="twitter" class="block mb-2 font-bold text-white">Description</label>
            {/* <input type="text" id="twitter" name="twitter" placeholder="Put in your fullname." /> */}
-    <textarea    onChange={(e)=>{
+    <textarea style={{"height" : "100px"}}   onChange={(e)=>{
 setDescription(e.target.value)
            }}  class="border  border-gray-300 shadow p-3 w-full rounded mb-"  id="" cols="30" rows="10"></textarea>
          </div>

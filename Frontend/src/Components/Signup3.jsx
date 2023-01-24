@@ -60,7 +60,7 @@ const Signup3 = () => {
 </div>
 
 <div>
-<Link to={'/Login'}><button  className='VButoontherS'>Previous</button></Link>
+{/* <Link to={'/Login'}><button  className='VButoontherS'>Previous</button></Link> */}
 <Link to={'/AddtoCard'}><button  className='VButoontherS'>Next Step</button></Link></div>
 
 
