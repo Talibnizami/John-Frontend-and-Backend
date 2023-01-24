@@ -43,7 +43,7 @@ const sendData = (e)=>{
     console.log(e);
 let id  = e
 
-axios.post(`http://localhost:8000/api/v1/product/${id}`, {
+axios.post(`http://localhost:8000/api/v1/update/${id}`, {
      
     name : Name , 
     price : Price , 
